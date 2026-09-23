@@ -2,8 +2,18 @@
 
 在 Meta Quest 內，透過中文語音與手柄和 AI 互動，讓 AI 建立、修改並解說可操作的虛擬物件。
 
-**狀態：研究與專案規劃完成；尚未完成裝置安裝、Quest 實測或自製 APK。**  
+**狀態：第一個展示已提供 Mac 啟動腳本、MCP 設定器與專用 session 指令；尚未完成 Mac／Quest 實機驗收或自製 APK。**  
 調研日期：2026-09-23。此專案並非 OpenAI 或 Meta 官方產品。
+
+## 現在先跑通第一個展示
+
+已確認本輪目標：紅色方塊 → 手柄選取 → 語音變藍、每邊放大兩倍 → 手柄移動 → 語音保存 → 重开載入。
+
+- **[從這裡啟動與驗收](docs/05-first-demo.md)**
+- **[給 Mac 本機 Agent 的專用指令](prompts/FIRST_DEMO_SESSION.md)**
+- Mac 終端：`bash scripts/start-demo-mac.sh`，或 clone 後雙擊 `Start-First-Demo.command`。
+- 設定器 7 項測試通過，Bash 語法檢查通過；六步實機測試仍未執行。
+- 需要在能連到 Quest 區網的 Mac 執行；雲端對話不能代替本機 bridge。
 
 ## 調研結論與路線
 
